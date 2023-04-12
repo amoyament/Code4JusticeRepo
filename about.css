@@ -3,17 +3,77 @@ body{
     width: 100%;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 0;
-    padding: 0;
+    /* padding: 0; */
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+/* 
+html{
+    font-size: 62.5%;
+    } */
+
+nav{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: darkcyan;
+    height: 9%;
+    width: 100%;
+    /* position: fixed; */
+    /* Take out position fixed in css file */
+    }
+
+label.logo{
+    color: whitesmoke;
+    font-family: monospace, courier, new;
+    font-size: 3.0rem;
+    line-height: 6.0rem;
+    font-weight: bold;
+    }
+
+nav ul{
+    display: grid;
+    grid-auto-flow: column;
+    float: right;
+    gap: .6em;
+    justify-content: center;
+    margin-right: 1.0rem;
+    }
+    
+nav ul li{
+    font-family: sans-serif;
+    display: inline-block;
+    line-height: 6.0rem;
+    }
+
+nav ul li a{
+    color: whitesmoke;
+    font-size: 20%;
+    text-transform: uppercase;
+    padding: .1rem .1rem;
+    border-radius: .3rem;
+    float: right;
+    height: 1.0rem;
+    text-decoration: none;
+    }
+
+nav ul li:hover{
+    background-color: lightgreen;
+    border-radius: .4rem;
+    line-height: 8.0rem;
 }
 
 main{
     text-align: center;
     background-color: #FAC81D;
     width: 97%;
+    height: 9%;
     border: solid;
     border-width: 3px;
     border-color: black;
-    margin: 1%; 
+    margin: 1%;
 }
 
 h1{
@@ -88,7 +148,7 @@ footer {
     gap: 1em;
     justify-content: center;
     background-color: darkcyan; 
-    padding: 2% 3% 3%;
+    padding: 2% 3%;
     width: 100%;
     }
 
