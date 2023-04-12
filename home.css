@@ -20,12 +20,13 @@ nav{
     position: fixed;
     }
 
-label.logo{
+#logo{
     color: whitesmoke;
     font-family: monospace, courier, new;
     font-size: 3.0rem;
-    line-height: 6.0rem;
+    line-height: 5.0rem;
     font-weight: bold;
+    border: 0px;
     }
 
 nav ul{
@@ -34,7 +35,7 @@ nav ul{
     float: right;
     gap: .6em;
     justify-content: center;
-    margin-right: 1.0rem;
+    margin-right: 2rem;
     
     }
     
@@ -46,7 +47,8 @@ nav ul li{
 
 nav ul li a{
     color: whitesmoke;
-    font-size: 1.0rem;
+    font-size: .7rem;
+    font-weight: 500;
     text-transform: uppercase;
     padding: .1rem .1rem;
     border-radius: .3rem;
@@ -112,4 +114,11 @@ button:hover{
     height: 0rem;
     }
 
+    .hide{
+        display: none;
+    }
+
+    /* .size{
+        color: lightgreen;
+    } */
 
