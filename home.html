@@ -10,7 +10,7 @@
 </head>
 <body>
     <nav>
-        <label class="logo">Re|Con</label>
+        <button id="logo">Re|Con</button>
         <ul>
             <li> <a href="home.html">Home</a></li>
             <li> <a href="team.html">Team</a></li>
@@ -22,16 +22,17 @@
     <section class="hero">
         <div class="hero-text">
             <h1></h1>
-                  <p>Welcome to Re|Con, a non-profit organization dedicated to helping ex-convicts find employment opportunities and build a better future for themselves. Our mission is to bridge the gap between ex-convicts and employers who are willing to offer a second chance. We think that helping ex-convicts will cause crime and poverty rates to decline in our area. Join us in our mission to create a better future for all.</p>
+                  <p id="hero-text">Welcome to Re|Con, a non-profit organization dedicated to helping ex-convicts find employment opportunities and build a better future for themselves. Our mission is to bridge the gap between ex-convicts and employers who are willing to offer a second chance. We think that helping ex-convicts will cause crime and poverty rates to decline in our area. Join us in our mission to create a better future for all.</p>
                   
-                  <button onclick="location.href='https://www.monster.com'" type="button">
-                    Find Jobs </button>
+                  <!-- <button onclick="location.href='https://www.monster.com'" type="button">
+                    Find Jobs </button> -->
 
-                  <!-- JAVASCRIPT ON CLICK -->
+              <a href="https://www.monster.com" target="_blank"><button id="button"> 
+                    Find Jobs 
+                  </button></a>
+
+                  <p id="hero">GIVE US A GOOD GRADE :) </p>
                   
-                  <!-- <button onclick="findjobs()">Find Jobs</button>
-                  <script src="index.js"></script> -->
-
                </div>
     </section>
 
@@ -48,6 +49,20 @@
         <a href="http://www.snapchat.com" aria-label="snapchat link"><i class="fa-brands fa-snapchat"></i></a>
         <a href="http://www.twitter.com" aria-label="twitter link "><i class="fa-brands fa-twitter"></i></a>
       </footer>
+
+      <!-- JAVASCRIPT ON CLICK -->
+
+      <script>
+        const button= document.getElementById("logo");
+        const hero= document.getElementById("hero");
+        // const hero= document.getElementById("hero-text");
+        button.addEventListener("click", ()=> {
+            hero.classList.toggle('hide')
+            // hero.classList.toggle('size')
+
+        // alert("hero message");
+        } )
+      </script>
 
 </body>
 </html>
