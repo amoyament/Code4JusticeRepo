@@ -1,0 +1,212 @@
+body{
+    height: 100%;
+    width: 100%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    /* padding: 0; */
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+/* 
+html{
+    font-size: 62.5%;
+    } */
+
+nav{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: darkcyan;
+    height: 9%;
+    width: 100%;
+    /* position: fixed; */
+    /* Take out position fixed in css file */
+    }
+
+label.logo{
+    color: whitesmoke;
+    font-family: monospace, courier, new;
+    font-size: 3.0rem;
+    line-height: 6.0rem;
+    font-weight: bold;
+    }
+
+nav ul{
+    display: grid;
+    grid-auto-flow: column;
+    float: right;
+    gap: .6em;
+    justify-content: center;
+    margin-right: 1.0rem;
+    }
+    
+nav ul li{
+    font-family: sans-serif;
+    display: inline-block;
+    line-height: 6.0rem;
+    }
+
+nav ul li a{
+    color: whitesmoke;
+    font-size: 20%;
+    text-transform: uppercase;
+    padding: .1rem .1rem;
+    border-radius: .3rem;
+    float: right;
+    height: 1.0rem;
+    text-decoration: none;
+    }
+
+nav ul li:hover{
+    background-color: lightgreen;
+    border-radius: .4rem;
+    line-height: 8.0rem;
+}
+
+main{
+    text-align: center;
+    background-color: #FAC81D;
+    width: 97%;
+    height: 9%;
+    border: solid;
+    border-width: 3px;
+    border-color: black;
+    margin: 1%;
+}
+
+h1{
+   font-size: 250%;
+   margin-bottom: 3%;
+}
+
+.impactphoto{
+    width: 100%;
+    height: auto;
+    border-top: solid;
+    border-bottom: solid;
+    border-color: black;
+    border-width: 3px;
+    margin-bottom: 5%;
+}
+
+.mainp{
+    padding: 0 8% 5%;
+    font-size: 150%;
+    text-align: center;
+    margin: 0;
+    border: none;
+}
+
+article{
+    text-align: center;
+    background-color: rgba(70, 165, 0, 0.8);
+    color: white;
+    width: 97%;
+    border: solid;
+    border-width: 3px;
+    border-color: black;
+    margin: 1%;
+}
+
+h2{
+    font-size: 200%;
+    margin-top: 5%;
+    padding: 5%;
+    background-color: rgb(70, 165, 0);
+}
+
+section{
+    width: 80%;
+    padding: 0% 10% 5%;
+}
+
+h3{
+    margin-bottom: 3%;
+    font-size: 180%;
+}
+
+ .successp{
+    font-size: 130%;
+    margin-top: 3%;
+ }
+
+.Successimg{
+    height: 60%;
+    width: 50%;
+    border: solid;
+    border-width: 3px;
+    border-color: white;
+    border-radius: 10%;
+    margin: 0;
+}
+
+footer {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 1em;
+    justify-content: center;
+    background-color: darkcyan; 
+    padding: 2% 3%;
+    width: 100%;
+    }
+
+@media screen and (min-width: 1020px) {
+
+    .impactphoto{
+        float: left;
+        width: 45%;
+        border: solid;
+        margin: 1% 1% 5%;
+        justify-content: center;
+    }
+
+    .mainp{
+        font-size: 130%;
+    }
+
+    article{
+        display: grid;
+        grid-template-rows: 15% 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    h2{
+        grid-row: 1;
+        grid-column: 1/4;
+        margin: 0;
+        margin-bottom: 5%;
+    }
+
+    h3{
+        margin: 5% 0% 5%;
+    }
+
+   success1{
+        grid-row: 2;
+        grid-column: 1;
+    }
+
+   success2{
+        grid-row: 2;
+        grid-column: 2;
+}
+
+    success3{
+        grid-row: 2;
+        grid-column: 3;
+    }
+
+    .Successimg{
+        height: 20%;
+        width: 70%;
+        border-width: 3px;
+        border-radius: 3%;
+    }
+
+    .successp{
+        margin-top: 5%;
+     }
+
+}
