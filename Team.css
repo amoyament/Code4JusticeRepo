@@ -1,0 +1,202 @@
+* {
+  margin: 0em;
+  padding: 0em;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+  scroll-behavior: smooth;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  color: black;
+  position: relative;
+  border-top: 1rem solid brown;
+}
+
+header {
+  display: flex;
+  position: relative;
+  top: 0em;
+  right: 0em;
+  width: 100%;
+  z-index: 1000;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3em 10em;
+}
+
+.navbar {
+  display: flex;
+}
+
+.menu {
+  padding: 0em 1em 3em 1em;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 2em 4em;
+}
+
+.navbar a {
+  color: brown;
+  font-size: 1.1rem;
+  padding: 0.9em 5em;
+  font-weight: 500;
+}
+
+.navbar a:hover {
+  color: black;
+  transition: 0.4s;
+  text-transform: uppercase;
+}
+
+#menu-icon {
+  font-size: 2rem;
+  cursor: pointer;
+  display: none;
+}
+
+.Theheader {
+  display: flex;
+  justify-content: center;
+}
+
+.Aubrey img {
+  width: 30em;
+  height: 8em;
+  border-radius: 60%;
+  padding: 0.1em;
+  border: 0.4em solid brown;
+  margin-right: 1em;
+  display: inline-block;
+}
+
+section.heading {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.service-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+  grid-gap: 1.5em;
+  margin-top: 4em;
+}
+
+.s-box {
+  text-align: center;
+  padding: 10em 2.6em;
+}
+
+.s-box img {
+  width: 8em;
+}
+
+.s-box h3 {
+  margin: 0.4em 0 1em;
+  color: black;
+  font-size: 1.2rem;
+}
+
+.s-box p {
+  line-height: 1.7;
+}
+
+.cta {
+  background-color: rgba(201, 74, 74, 0.664);
+  padding: 4em 0em;
+  text-align: center;
+  width: 66%;
+  margin: 4em auto;
+  border-radius: 3em;
+}
+
+.cta h2 {
+  font-size: 2rem;
+  color: black;
+  margin-bottom: 0.9em;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1em 2em;
+  background: rgb(238, 172, 172);
+  border-radius: 0.8rem;
+}
+
+.btn:hover {
+  transform: scale(1.2) translateY(1em);
+  transition: 0.5s;
+}
+
+@media (max-width: 1560px) {
+  header {
+    padding: 1.5em 2em;
+  }
+  .container {
+    padding: 3em 8%;
+  }
+}
+
+@media (max-width: 1140px) {
+  section {
+    padding: 3em 8%;
+  }
+  #menu-icon {
+    display: initial;
+  }
+  header .navbar {
+    position: absolute;
+    top: -400em;
+    left: 0em;
+    right: 0em;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: #ffffff;
+    transition: 0.3s;
+  }
+  .navbar a {
+    padding: 1.5em;
+    display: block;
+  }
+  .col {
+    width: 50%;
+    margin-bottom: 1em;
+  }
+}
+
+@media (max-width: 720px) {
+  header {
+    padding: 1em 1.6em;
+  }
+  .home {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .about {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .about-img {
+    order: 2;
+  }
+  section {
+    padding: 7%;
+  }
+}
+
+.Aubrey1 img {
+  width: 30em;
+  height: 30em;
+  border-radius: 90%;
+  padding: 0.1em;
+  border: 0.1em dashed brown;
+  margin-right: 1em;
+  display: inline-block;
+}
+
+.Aubrey1 img:hover {
+  transform: scale(1.3);
+  z-index: 1;
+}
