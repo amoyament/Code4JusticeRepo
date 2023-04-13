@@ -8,7 +8,7 @@
 
 html{
     font-size: 62.5%;
-    }
+}
 
 nav{
     display: flex;
@@ -19,7 +19,7 @@ nav{
     height: 9%;
     width: 100%;
     position: fixed;
-    }
+}
 
 #logo{
     color: whitesmoke;
@@ -28,7 +28,7 @@ nav{
     line-height: 5.0rem;
     font-weight: bold;
     border: 0px;
-    }
+}
 
 nav ul{
     display: grid;
@@ -37,12 +37,12 @@ nav ul{
     gap: .6em;
     justify-content: center;
     margin-right: 2rem;
-    }
+}
     
 nav ul li{
     display: inline-block;
     line-height: 6.0rem;
-    }
+}
 
 nav ul li a{
     color: whitesmoke;
@@ -53,19 +53,20 @@ nav ul li a{
     border-radius: .3rem;
     float: right;
     height: 1.0rem;
-    }
+}
 
 nav ul li:hover{
     background-color: lightgreen;
     border-radius: .4rem;
     line-height: 8.0rem;
 }
+
 .hero{
     background-image: linear-gradient(rgba(0, 0, 0, 0.776), rgba(0, 0, 0, 0.233)), url(https://images.pexels.com/photos/9510438/pexels-photo-9510438.jpeg?auto=compress&cs=tinysrgb&w=600);
     background-size: cover;
     height: 100vh;
     width: 100vw;
-    }
+}
 
 .hero-text{
     position: absolute;
@@ -74,7 +75,7 @@ nav ul li:hover{
     transform: translate(-50%,-50%);
     color: whitesmoke;
     text-align: center;
-    }
+}
       
 .hero-text p{
     margin: .1rem;
