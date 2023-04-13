@@ -11,50 +11,84 @@
 body {
   color: black;
   position: relative;
-  border-top: 1rem solid brown;
 }
 
-header {
+
+nav{
   display: flex;
-  position: relative;
-  top: 0em;
-  right: 0em;
-  width: 100%;
-  z-index: 1000;
-  align-items: center;
+  align-content: center;
   justify-content: space-between;
-  padding: 3em 10em;
+  flex-wrap: wrap;
+  background: darkcyan;
+  height: 9%;
+  width: 100%;
+  /* position: fixed; */
+  }
+
+#logo{
+  color: whitesmoke;
+  font-family: monospace, courier, new;
+  font-size: 3.0rem;
+  line-height: 5.0rem;
+  font-weight: bold;
+  border: 0px;
+  }
+
+nav ul{
+  display: grid;
+  grid-auto-flow: column;
+  float: right;
+  gap: .6em;
+  justify-content: center;
+  margin-right: 2rem;
+  }
+  
+nav ul li{
+  font-family: sans-serif;
+  display: inline-block;
+  line-height: 6.0rem;
+  }
+
+nav ul li a{
+  color: whitesmoke;
+  font-size: .7rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: .1rem .1rem;
+  border-radius: .3rem;
+  float: right;
+  height: 1.0rem;
+  }
+
+nav ul li:hover{
+  background-color: lightgreen;
+  border-radius: .4rem;
+  line-height: 8.0rem;
 }
 
-.navbar {
-  display: flex;
-}
-
+button{
+  background: darkcyan;
+  border: .2rem solid;
+  color: whitesmoke;
+  font-size: 1.5rem;
+  padding: 1rem 2.5rem;
+  border-radius: .8rem;
+  font-weight: bold;
+  transition: 0.5s all ease;
+  }
+  
+button:hover{
+  background-color: lightgreen;
+  }
+/* 
 .menu {
   padding: 0em 1em 3em 1em;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   grid-gap: 2em 4em;
-}
+} */
 
-.navbar a {
-  color: brown;
-  font-size: 1.1rem;
-  padding: 0.9em 5em;
-  font-weight: 500;
-}
 
-.navbar a:hover {
-  color: black;
-  transition: 0.4s;
-  text-transform: uppercase;
-}
-
-#menu-icon {
-  font-size: 2rem;
-  cursor: pointer;
-  display: none;
-}
 
 .Theheader {
   display: flex;
@@ -66,7 +100,7 @@ header {
   height: 8em;
   border-radius: 60%;
   padding: 0.1em;
-  border: 0.4em solid brown;
+  border: 0.4em solid black;
   margin-right: 1em;
   display: inline-block;
 }
@@ -80,12 +114,12 @@ section.heading {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, auto));
   grid-gap: 1.5em;
-  margin-top: 4em;
+  margin-top: 1em;
 }
 
 .s-box {
   text-align: center;
-  padding: 10em 2.6em;
+  padding: 2em 2.6em;
 }
 
 .s-box img {
@@ -103,7 +137,7 @@ section.heading {
 }
 
 .cta {
-  background-color: rgba(201, 74, 74, 0.664);
+  background-color:rgba(0, 139, 139, 0.643);
   padding: 4em 0em;
   text-align: center;
   width: 66%;
@@ -120,7 +154,7 @@ section.heading {
 .btn {
   display: inline-block;
   padding: 1em 2em;
-  background: rgb(238, 172, 172);
+  background: rgba(0, 139, 139, 0.764);
   border-radius: 0.8rem;
 }
 
@@ -128,6 +162,16 @@ section.heading {
   transform: scale(1.2) translateY(1em);
   transition: 0.5s;
 }
+
+footer {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 1em;
+  justify-content: center;
+  background-color: darkcyan; 
+  padding: 2% 3%;
+  width: 100%;
+  }
 
 @media (max-width: 1560px) {
   header {
@@ -187,11 +231,11 @@ section.heading {
 }
 
 .Aubrey1 img {
-  width: 30em;
-  height: 30em;
+  width: 15em;
+  height: 15em;
   border-radius: 90%;
   padding: 0.1em;
-  border: 0.1em dashed brown;
+  border: 0.1em dashed black;
   margin-right: 1em;
   display: inline-block;
 }

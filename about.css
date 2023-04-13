@@ -1,49 +1,36 @@
 body{
     height: 100%;
     width: 100%;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family:'Courier New', Courier, monospace;
     margin: 0;
-    /* padding: 0; */
-    text-decoration: none;
-    list-style: none;
     box-sizing: border-box;
 }
-/* 
-html{
-    font-size: 62.5%;
-    } */
 
 nav{
     display: flex;
-    align-content: center;
+
     justify-content: space-between;
     flex-wrap: wrap;
     background: darkcyan;
-    height: 9%;
     width: 100%;
-    /* position: fixed; */
-    /* Take out position fixed in css file */
     }
 
 label.logo{
     color: whitesmoke;
     font-family: monospace, courier, new;
-    font-size: 3.0rem;
+    font-size: 2.0rem;
     line-height: 6.0rem;
     font-weight: bold;
+    padding-left: 2%;
     }
 
 nav ul{
-    display: grid;
-    grid-auto-flow: column;
     float: right;
     gap: .6em;
-    justify-content: center;
-    margin-right: 1.0rem;
+    padding-right: 2%;
     }
     
 nav ul li{
-    font-family: sans-serif;
     display: inline-block;
     line-height: 6.0rem;
     }
@@ -67,7 +54,7 @@ nav ul li:hover{
 
 main{
     text-align: center;
-    background-color: #FAC81D;
+    background-color: rgba(128, 128, 128, 0.66);
     width: 97%;
     height: 9%;
     border: solid;
@@ -77,6 +64,7 @@ main{
 }
 
 h1{
+    color: whitesmoke;
    font-size: 250%;
    margin-bottom: 3%;
 }
@@ -86,12 +74,13 @@ h1{
     height: auto;
     border-top: solid;
     border-bottom: solid;
-    border-color: black;
+    border-color: whitesmoke;
     border-width: 3px;
     margin-bottom: 5%;
 }
 
 .mainp{
+    color: whitesmoke;
     padding: 0 8% 5%;
     font-size: 150%;
     text-align: center;
@@ -101,7 +90,7 @@ h1{
 
 article{
     text-align: center;
-    background-color: rgba(70, 165, 0, 0.8);
+    background-color: rgb(68, 68, 68);
     color: white;
     width: 97%;
     border: solid;
@@ -114,7 +103,7 @@ h2{
     font-size: 200%;
     margin-top: 5%;
     padding: 5%;
-    background-color: rgb(70, 165, 0);
+    background-color: rgb(134, 134, 134);
 }
 
 section{
@@ -154,10 +143,14 @@ footer {
 
 @media screen and (min-width: 1020px) {
 
+    .li{
+        font-size: 100%;
+    }
     .impactphoto{
         float: left;
         width: 45%;
         border: solid;
+        border-color: whitesmoke;
         margin: 1% 1% 5%;
         justify-content: center;
     }

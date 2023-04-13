@@ -1,0 +1,171 @@
+* {
+    margin: 0em;
+    padding: 0em;
+    box-sizing: border-box;
+    font-family: "Courier New", Courier, monospace;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+  }
+  
+  body {
+    color: black;
+    position: relative;
+  }
+  
+  nav{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: darkcyan;
+    height: 9%;
+    width: 100%;
+    /* position: fixed; */
+    /* Take out position fixed in css file */
+    }
+
+label.logo{
+    color: whitesmoke;
+    font-family: monospace, courier, new;
+    font-size: 3.0rem;
+    line-height: 6.0rem;
+    font-weight: bold;
+    }
+
+nav ul{
+    display: grid;
+    grid-auto-flow: column;
+    float: right;
+    gap: .6em;
+    justify-content: center;
+    margin-right: 1.0rem;
+    }
+    
+nav ul li{
+    font-family: sans-serif;
+    display: inline-block;
+    line-height: 6.0rem;
+    }
+
+nav ul li a{
+    color: whitesmoke;
+    font-size: 20%;
+    text-transform: uppercase;
+    padding: .1rem .1rem;
+    border-radius: .3rem;
+    float: right;
+    height: 1.0rem;
+    }
+
+nav ul li:hover{
+    background-color: lightgreen;
+    border-radius: .4rem;
+    line-height: 8.0rem;
+}
+
+
+  section.heading {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 0;
+    padding-top: 5%;
+  }
+
+  .service-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+    grid-gap: 1.5em;
+    margin-top: 4em;
+  }
+  
+  .s-box {
+    text-align: center;
+    padding: 1em 2.6em;
+  }
+  
+  .s-box img {
+    width: 8em;
+  }
+  
+  .s-box h3 {
+    margin: 0.4em 0 1em;
+    color: black;
+    font-size: 1.2rem;
+  }
+  
+  .s-box p {
+    line-height: 1.7;
+  }
+  
+  
+  
+  @media (max-width: 1560px) {
+    header {
+      padding: 1.5em 2em;
+    }
+    .container {
+      padding: 3em 8%;
+    }
+  }
+  
+  @media (max-width: 1140px) {
+    section {
+      padding: 3em 8%;
+    }
+
+    header .navbar {
+      position: absolute;
+      top: -400em;
+      left: 0em;
+      right: 0em;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      background: #ffffff;
+      transition: 0.3s;
+    }
+    .navbar a {
+      padding: 1.5em;
+      display: block;
+    }
+
+  }
+  
+  @media (max-width: 720px) {
+    header {
+      padding: 1em 1.6em;
+    }
+
+    section {
+      padding: 7%;
+    }
+  }
+  
+  .Aubrey1 img {
+    width: 15em;
+    height: 15em;
+    border-radius: 90%;
+    padding: 0.1em;
+    border: 0.1em dashed black;
+    margin-right: 1em;
+    display: inline-block;
+  }
+  
+  .Aubrey1 img:hover {
+    transform: scale(1.3);
+    z-index: 1;
+  }
+
+  footer {
+    display: grid;
+    grid-auto-flow: column;
+    position: fixed;
+    bottom: 0;
+    gap: 1em;
+    justify-content: center;
+    background-color: darkcyan; 
+    padding: 2% 3%;
+    width: 100%;
+    }
